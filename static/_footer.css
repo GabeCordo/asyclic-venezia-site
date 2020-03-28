@@ -1,0 +1,33 @@
+@import 'layout.css';
+
+.page-footer {
+	background-image: 
+		url('../static/bin/backgrounds/background_footer.png'),
+		linear-gradient(to right bottom, #d3daf4, #d5dcf3, #d8dff2, #dae1f1, #dde3f0, #e0e5f0, #e3e7ef, #e6e9ef, #eaebf0, #edeef1, #f0f0f2, #f3f3f3);
+	background-position: top;
+}
+
+.vertical-divider {
+	transform: rotate(90deg) translateX(10vh);
+	float: center;
+	border: 1px solid #19323C;
+	width: 10vw;
+}
+
+.header-normal {
+	font-family: Modelica ExtraBold;
+	color: #19323C;
+}
+
+.text-normal {
+	font-family: Modelica Light;
+	color: #19323C;
+}
+
+.reroute-links {
+	padding-bottom: 5vh;
+}
+
+.footer-copyright {
+	color: #999999;
+}

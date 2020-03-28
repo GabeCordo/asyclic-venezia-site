@@ -1,0 +1,18 @@
+@import 'layout.css';
+
+.navbar {
+	
+	background: transparent;
+	
+	border-radius: 0px;
+	border-color: transparent;
+	
+}
+
+.branding-logo {
+	
+	float: left;
+	transform: translateY(-2.5vh);
+	padding-left: 2.5vw;
+	
+}

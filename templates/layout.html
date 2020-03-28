@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../static/layout.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Default template ex. 'Grackle  |  Official Site' -->
+		<title> {{ title }}  |  {{ sub_title }} </title>
+	</head>
+	<body>
+		
+		<!--
+			option to divert all traffic to the down page if certain elements
+			have issues or are being worked on, just an oh-shit measure
+		-->
+		{% if under_work == True %}
+			<meta http-equiv = "refresh" content = "2; url = /" />
+		{% endif %}
+		
+		<!--
+			On some pages we may want to only display the logo to produce
+			a minamilist effect and divert focus only onto the center of
+			the page (ex. login/signup screen, can still go to the main page
+			through clicking the logo so it works out
+		-->
+		{% if navbar == True %}
+			{% include '_navbar.html' %}
+		{% else %}
+			{% include '_branding.html' %}
+		{% endif %}
+		
+		<!--
+			All page content thats specific to that page goes within the content
+			section of the template
+		-->
+		<div class="container"> 
+			{% block content %} {% endblock %}
+		</div>
+			
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+	<footer>
+		<!--
+			similar to the navbar, we might want to remove the footer as to not divert
+			attention from the purpose of the page (login/signup) option to remove it
+			on the flask variables
+		-->
+		{% if footer == True %}
+			{% include '_footer.html' %}
+		{% endif %}
+	</footer>
+</html>

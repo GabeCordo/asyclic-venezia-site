@@ -1,0 +1,65 @@
+@import 'layout.css';
+
+.navbar {
+	
+	background: transparent;
+	
+	border-radius: 0px;
+	border-color: transparent;
+	
+}
+
+.navbar-logo {
+	
+	float: left;
+	
+}
+
+.navbar-center {
+	
+	float: center;
+	padding-left: 6vw;
+	vertical-align: center;
+	
+}
+
+.link-text {
+	font-size: 0.9vw;
+}
+
+.link-text:hover {
+	
+	color: white !important;
+}
+
+.navbar-center .link-text {
+	color: white;
+}
+
+.navbar-right {
+	float: right;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	padding-right: 1vw;
+}
+
+.navbar-right .space-icon-languages {
+	padding-right: 1vw;
+}
+
+.dropdown-languages {
+	position: relative;
+	font-family: Modelica Thin;
+	background-color: blue;
+}
+
+.navbar-right .button-edits { 
+	/*
+		we have to override some default elements of
+		the download button declared in layout.css
+	*/
+	background: transparent !important;
+	border: 2px solid white;
+	border-width: 0.1vh !important;
+	border-color: white !important;
+}
