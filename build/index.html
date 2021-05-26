@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../static/layout.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Default template ex. 'Grackle  |  Official Site' -->
+		<title> Grackle  |  Official Site </title>
+	</head>
+	<body>
+		
+		<!--
+			option to divert all traffic to the down page if certain elements
+			have issues or are being worked on, just an oh-shit measure
+		-->
+		
+		
+		<!--
+			On some pages we may want to only display the logo to produce
+			a minamilist effect and divert focus only onto the center of
+			the page (ex. login/signup screen, can still go to the main page
+			through clicking the logo so it works out
+		-->
+		
+			<link rel="stylesheet" type="text/css" href="../static/_navbar.css">
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	
+		<div class="navbar-header navbar-logo hs-left">
+			<a href="/">
+				<h2 style="color: white;">Manakin</h2>
+			</a>
+		</div>
+		
+		<ul class="nav navbar-nav navbar-center vs-above">
+			<li><a class="link-text" href="#">Download</a></li>
+			<li><a class="link-text" href="#">About</a></li>
+			<li><a class="link-text" href="#">Documentation</a></li>
+			<li><a class="link-text" href="#">Community</a></li>
+		</ul>
+		
+		<div class="nav-header navbar-right">
+			<a class="test" href="/">
+				<img src="../static/bin/icons/social_media/insta.png">
+			</a>
+			<a class="icon-social-media" href="/">
+				<img src="../static/bin/icons/social_media/twitt.png">
+			</a>
+			<a class="icon-social-media space-icon-languages" href="/">
+				<img src="../static/bin/icons/social_media/fb.png">
+			</a>
+			<button class="button-download button-edits"> Coming Soon </button>
+		</div>
+		
+	</div>
+</nav>
+		
+		
+		<!--
+			All page content thats specific to that page goes within the content
+			section of the template
+		-->
+		<div class="container"> 
+			
+	<link rel="stylesheet" type="text/css" href="../static/index.css">
+	
+	<div class="section-one">
+	
+		<img class="col-md-6 section-one-block main-image" src="../static/bin/drawings/data_view.svg">
+		
+		<div class="section-one-block subsection-one">
+		
+			<div class="spacer"></div>
+			<div class="spacer-half"></div>
+			<h1 class="col-md-6 mt-md-0 mt-3 block main-header"> A <u>secure</u> way to text with people from around the globe &#127758 </h1>
+			<h4 class="normal-text main-subtext">Manakin is the simplist way for you to keep your personal conversations private and your location anonymous while communicating between co-workers, family, friends, or a random stranger you might not trust.</h4>
+			<div class="spacer-half"></div>
+			<button class="main-button" onclick="location.href('login.html');" value="Redirect"> Coming Soon </button>
+			<button class="main-button"> How does it work? </button>
+			
+		</div>
+		
+	</div>
+
+
+		</div>
+			
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+	<footer>
+		<!--
+			similar to the navbar, we might want to remove the footer as to not divert
+			attention from the purpose of the page (login/signup) option to remove it
+			on the flask variables
+		-->
+		
+			<link rel="stylesheet" type="text/css" href="../static/_footer.css">
+
+<footer class="page-footer font-small blue pt-4">
+
+	<!--
+	<h2 class="text-center vs-above"> Why Choose Grackle Over SMS, Telegram</h2>
+	<div class="wrapper-hor text-center vs-above">
+		<div class="card hor-element-block hs-right">
+			<div class="card-body">
+				<h4 class="card-title">Trust & Accountability</h4>
+				<p class="card-text">Some example text. Some example text.</p>
+			</div>
+		</div>
+		<div class="card hor-element-block hs-right">
+			<div class="card-body">
+				<h4 class="card-title">100% Anonymous</h4>
+				<p class="card-text">Some example text. Some example text.</p>
+			</div>
+		</div>
+		<div class="card hor-element-block">
+			<div class="card-body">
+				<h4 class="card-title">No Payments or Transactions</h4>
+				<p class="card-text">Some example text. Some example text.</p>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="spacer-half"></div>
+	
+	<div class="container-fluid text-center text-md-left reroute-links">
+	
+		<div class="row">
+			
+			<hr class="vertical-divider">
+			
+			<div class="col-md-6 mt-md-0 mt-3 text-left hs-left">
+			
+				<h2>Manakin</h2>
+				<p class="text-normal vs-bellow">Grackle is a communication routing and encryption service providing untraceable messages through the use of exit nodes.</p>
+				<button class="block button-download vs-above vs-bellow"> Coming Soon </button>
+				
+			</div>
+			
+			<div class="box-redirect vs-above">
+			
+				<div class="col-md-1 mb-md-0 mb-3 hs-left">
+					<h5 class="text-uppercase header-normal" align="left">Product</h5>
+					<ul class="list-unstyled" align="left">
+						<li>
+							<a href="#!">Download</a>
+						</li>
+						<li>
+							<a href="#!">Branding</a>
+						</li>
+						<li>
+							<a href="#!">Pricing</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-1 mb-md-0 mb-3 hs-left" style="width: 14vw;">
+					<h5 class="text-uppercase header-normal" align="left">Features</h5>
+					<ul class="list-unstyled" align="left">
+						<li>
+							<a href="#!">Text Nodes</a>
+						</li>
+						<li>
+							<a href="#!">Data Storage</a>
+						</li>
+						<li>
+							<a href="#!">Grackle Teams</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-1 mb-md-0 mb-3" style="width: 12vw;">
+					<h5 class="text-uppercase header-normal" align="left">Documentation</h5>
+					<ul class="list-unstyled" align="left">
+						<li>
+							<a href="#!">Help & Support</a>
+						</li>
+						<li>
+							<a href="#!">Terms of Service</a>
+						</li>
+						<li>
+							<a href="#!">User Privacy</a>
+						</li>
+						<li>
+							<a href="#!">Feedback</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="col-md-1 mb-md-0 mb-3">
+					<h5 class="text-uppercase header-normal" align="left">Company</h5>
+					<ul class="list-unstyled" align="left">
+						<li>
+							<a href="#!">About</a>
+						</li>
+						<li>
+							<a href="#!">Hiring</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="footer-copyright text-center py-3 vs-above">© 2020 Copyright:
+			<a href="/"> Grackle.ca </a>
+		</div>
+
+	</div>
+	
+</footer>
+		
+	</footer>
+</html>

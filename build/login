@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../static/layout.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Default template ex. 'Grackle  |  Official Site' -->
+		<title> Grackle  |  Welcome Back </title>
+	</head>
+	<body>
+		
+		<!--
+			option to divert all traffic to the down page if certain elements
+			have issues or are being worked on, just an oh-shit measure
+		-->
+		
+		
+		<!--
+			On some pages we may want to only display the logo to produce
+			a minamilist effect and divert focus only onto the center of
+			the page (ex. login/signup screen, can still go to the main page
+			through clicking the logo so it works out
+		-->
+		
+			<link rel="stylesheet" type="text/css" href="../static/_branding.css">
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	
+		<div class="branding-logo">
+			<a href="/">
+				<img alt="Manakin" src="../static/bin/branding/grackle_white_transparent.png" width="250vw">
+			</a>
+		</div>
+		
+	</div>
+</nav>
+		
+		
+		<!--
+			All page content thats specific to that page goes within the content
+			section of the template
+		-->
+		<div class="container"> 
+			
+
+	<link rel="stylesheet" type="text/css" href="../static/login.css">
+	
+	<div class="card login-form">
+		<div class="card-header">
+			<h3>Welcome back, </h3>
+		</div>
+		<div class="card-body">
+			
+			<input type="username" id="user" name="username" maxlength="12" placeholder="johndoe" required>
+			<input type="password" id="pass" name="password" minlength="8" placeholder="••••••••" required>
+		</div> 
+		<div class="card-footer">
+		</div>
+	</div>
+	
+
+		</div>
+			
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+	<footer>
+		<!--
+			similar to the navbar, we might want to remove the footer as to not divert
+			attention from the purpose of the page (login/signup) option to remove it
+			on the flask variables
+		-->
+		
+	</footer>
+</html>
