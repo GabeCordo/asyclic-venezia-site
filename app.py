@@ -15,7 +15,7 @@ from data import ServerAccounts, ServerMailing
 ########################################################################
 
 #Server-Side Configurations
-DEBUG_MODE = True
+DEBUG_MODE = False
 LIGHT_MODE = True	
 CONSTRUCTION_MODE = False
 app = Flask(__name__)
